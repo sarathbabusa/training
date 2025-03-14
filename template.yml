@@ -1,0 +1,7 @@
+- name: To copy
+  hosts: localhost
+  tasks: 
+    - name: Copy Excercise
+      ansible.builtin.copy:
+      src: example.conf
+      dest: /tmp/example-copy.conf
